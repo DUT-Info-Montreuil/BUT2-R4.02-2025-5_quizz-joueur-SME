@@ -1,14 +1,14 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.services.impl;
 
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.entities.dto.JoueurDTO;
-import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.services.interfaces.JoueurInterface;
+import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.services.interfaces.JoueurServiceInterface;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.utils.enums.Langue;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.utils.execptions.joueur_exception.*;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr5.jeuQuizz.utils.constants.JoueurStaticFunction;
 
 import java.util.ArrayList;
 
-public class JoueurService implements JoueurInterface {
+public class JoueurService implements JoueurServiceInterface {
     @Override
     public JoueurDTO addJoueurDTO(String pseudo, String prenom, int anneeNaissance, String centreInteret, int languePref) throws AddJoueurException {
         try {
